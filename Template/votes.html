@@ -1,0 +1,14 @@
+<div>
+    <form method="POST" action="/votes">
+        <input type="text" name="candidateName" required placeholder="Candidate Name">
+        <button type="submit">Vote</button>
+    </form>
+    <div>
+        <h2>Current Votes:</h2>
+        <ul>
+            <li th:each="vote : ${votes}">
+                <span th:text="${vote.candidateName}">Candidate Name</span>
+            </li>
+        </ul>
+    </div>
+</div>
