@@ -1,0 +1,9 @@
+<div>
+    <h2>Admin Panel</h2>
+    <h3>Current Votes:</h3>
+    <ul>
+        <li th:each="vote : ${votes}">
+            <span th:text="${vote.candidateName}">Candidate Name</span>
+        </li>
+    </ul>
+</div>
